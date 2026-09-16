@@ -1,5 +1,38 @@
-nav {
+html {
+    scroll-behavior: smooth;
+ }
+ 
+header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+
+}
+
+/*main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.resourcegrid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+}
+
+footer {
+    text-align: center;
 }
