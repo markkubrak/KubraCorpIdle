@@ -11,7 +11,8 @@
     <header>
         <h1>Kubra Corp Idle!</h1>
         <p>It's resource gathering time, baby</p>
-        <nav>
+
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="#mainCharacter">Main</a></li>
                 <li><a href="#resources">Resources</a></li>
@@ -25,7 +26,7 @@
             <h2>Current Status</h2>
             <p>Gold: <span id="gold">0</span></p>
             <p>Gathering: <span id="resource">Nothing</span></p>
-            <button type="button">Generate</button>
+            <button id="generateButton" type="button">Generate</button>
         </section>
 
         <section id="resources">
@@ -33,19 +34,19 @@
             <h2>Resources</h2>
             
             <div class="resourcegrid">
-                <article>
+                <article class="resourceCard">
                     <h3>Wood</h3>
-                    <p>0</p>
+                    <p>Amount: <span id="wood">0</span></p>
                 </article>
 
-                <article>
+                <article class="resourceCard"">
                     <h3>Copper</h3>
-                    <p>0</p>
+                    <p>Amount: <span id="copper">0</span></p>
                 </article>
 
-                <article>
+                <article class="resourceCard">
                     <h3>Fish</h3>
-                    <p>0</p>
+                    <p>Amount: <span id="fish">0</span></p>
                 </article>
             </div>
         </section>
@@ -54,19 +55,19 @@
             <h2>Skills</h2>
             <p>Watch your skills improve, wow</p>
 
-            <article>
+            <article class="skillCard">
                 <h3>Woodcutting: <span id="woodcutting">1</span></h3>
                 <p>XP: <span id="woodcuttingXP">0</span></p>
                 <p>The trees speak your name...</p>
             </article>
 
-            <article>
+            <article class="skillCard">
                 <h3>Mining: <span id="mining">1</span></h3>
                 <p>XP: <span id="miningXP">0</span></p>
                 <p>The mines, you yearn for them.</p>
             </article>
 
-            <article>
+            <article class="skillCard">
                 <h3>Fishing: <span id="fishing">1</span></h3>
                 <p>XP: <span id="fishingXP">0</span></p>
                 <p>White whale, holy grail.</p>
