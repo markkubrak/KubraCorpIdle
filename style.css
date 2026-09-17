@@ -1,5 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
+ }
+
+ body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #1c1410;
+    color: #eadcc5;
+
+    font-family: system-ui, -apple-system, system-ui, -apple-system, BlinkMacSystemFont, "Segoe Ui", sans-serif;
+
+    line-height: 1.6;
  }
  
 header {
@@ -32,18 +48,35 @@ nav ul a:hover {
     color: lightblue;
 }
 
-/*main {
+main {
+    width: min(1100px, 92%);
+    margin-inline: auto;
+}
+
+section {
+    margin-block: 2rem;
+    padding: 2rem;
+
+    background-color: #2a1d17;
+    border: 1px solid #5b4030;
+    border-radius: 12px;
+}
+
+#mainCharacter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}*/
+
+}
 
 .resourcegrid {
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
-        minmax(200px, 1fr)
+        minmax(200px, 200px)
     );
+    justify-content: center;
 }
 
 footer {
