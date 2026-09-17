@@ -28,24 +28,29 @@ header {
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 2rem;
+
     list-style-type: none;
     padding: 0;
-    margin: 15px 0 0 0;
+    margin: 1.5rem 0 0;
 }
 
 nav ul a {
     text-decoration: none;
-    color: black;
+    color: #eadcc5;
+    font-weight: 600;
+
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-nav ul a:visited,
-nav ul a:active {
-    color: black;
-}
 
 nav ul a:hover {
-    color: lightblue;
+    color: #1c1410;
+    background-color: #d6a84f;
 }
 
 main {
@@ -68,15 +73,34 @@ section {
     justify-content: center;
     align-items: center;
 
+    text-align: center;
+
+    min-height: 280px;
+}
+
+h1, h2, h3 {
+    color: #d6a84f;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-bottom: 0.25rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #5b4030;
+    padding-bottom: 0.75rem;
 }
 
 .resourcegrid {
     display: grid;
     grid-template-columns: repeat(
         auto-fit,
-        minmax(200px, 200px)
+        minmax(200px, 1fr)
     );
-    justify-content: center;
+    gap: 1.25rem;
 }
 
 footer {
