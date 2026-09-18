@@ -103,6 +103,33 @@ h2 {
     gap: 1.25rem;
 }
 
+.resourceCard {
+    padding: 1.5rem;
+    text-align: center;
+
+    background-color: #35251d;
+    border: 1px solid #6b4935;
+    border-radius: 10px;
+
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.resourceCard:hover {
+    transform: translateY(-4px);
+    border-color: #d6a84f;
+}
+
+.resourceCard h3 {
+    margin-top: 0;
+}
+
+.resourceCard p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d6a84f;
+    margin-bottom: 0;
+}
+
 footer {
     text-align: center;
 }
