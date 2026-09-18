@@ -182,3 +182,26 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        padding: 0.4rem 0.6rem;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    main {
+        width: 94%;
+    }
+}
