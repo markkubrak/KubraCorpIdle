@@ -130,6 +130,24 @@ h2 {
     margin-bottom: 0;
 }
 
+#skills {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+#skills > h2, #skills > p {
+    grid-column: 1 / -1;
+}
+
+.skillCard {
+    padding : 1.5rem;
+
+    background-color: #35251d;
+    border-left: 4px solid #c47a44;
+    border-radius: 8px;
+}
+
 footer {
     text-align: center;
 }
