@@ -4,5 +4,9 @@ const resourceSelect = document.querySelector("#resourceSelect");
 generateButton.addEventListener("click", function() {
    const selectedResouce = resourceSelect.value;
 
-    console.log("Selected resource:", selectedResouce);
+   const resourceAmount = document.querySelector(`#${selectedResouce}`);
+
+   resourceAmount.textContent = Number(resourceAmount.textContent) + 1;
+
+    console.log("Generated:", selectedResouce);
 });
