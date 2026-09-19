@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kubra Corp Idle</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -26,6 +27,15 @@
             <h2>Current Status</h2>
             <p>Gold: <span id="gold">0</span></p>
             <p>Gathering: <span id="resource">Nothing</span></p>
+
+            <label for="resourceSelect">Choose a resource:</label>
+
+            <select id="resourceSelect">
+                <option value="wood">Wood</option>
+                <option value="copper">Copper</option>
+                <option value="fish">Fish</option>
+            </select>
+
             <button id="generateButton" type="button">Generate</button>
         </section>
 
@@ -39,7 +49,7 @@
                     <p>Amount: <span id="wood">0</span></p>
                 </article>
 
-                <article class="resourceCard"">
+                <article class="resourceCard">
                     <h3>Copper</h3>
                     <p>Amount: <span id="copper">0</span></p>
                 </article>
