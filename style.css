@@ -175,6 +175,12 @@ button:active {
 
 footer {
     text-align: center;
+
+    margin-top: 4rem;
+    padding: 2rem;
+
+    color: #8f7964;
+    border-top: 1px solid #3d2b21;
 }
 
 @media (min-width: 700px) {
