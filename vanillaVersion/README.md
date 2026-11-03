@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Welcome to Kubra corp idle! 
 
 A little idle game I am working on for my modern web development class to learn the basics of vanilla html, css, and javascript. 
@@ -16,7 +15,6 @@ If you want to try it out locally on your machine:
 
 1. Clone or download this repository.
 2. Navigiate to the kubraCorpIdle folder.
-3. Open "html.index" directly into your browser (double click, or right click "open with")
+3. Open "index.html" directly into your browser (double click, or right click "open with")
 
-> **Note:** Some browsers restrict certain JavaScript features (like loading local files via `fetch`) when opening HTML files directly via `file://`. If you run into issues, you can instead serve the folder locally.
-> - **VS Code:** install the "Live Server" extension, right-click `index.html`, and select "Open with Live Server."
+> - **VS Code Insructions:** install the "Live Server" extension, right-click `index.html`, and select "Open with Live Server."
