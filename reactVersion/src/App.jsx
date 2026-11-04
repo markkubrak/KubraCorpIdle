@@ -1,5 +1,6 @@
-import { useReducer } from "react";
-import { gameReducer, initialState } from "./state/gameReducer";
+import { useEffect, useReducer } from "react";
+import { gameReducer } from "./state/gameReducer";
+import { loadGame, saveGame } from "./state/saveGame";
 import Header from "./components/Header";
 import StatusPanel from "./components/StatusPanel";
 import ResourceGrid from "./components/ResourceGrid";
@@ -8,7 +9,13 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const [state, dispatch] = useReducer(gameReducer, initialState);
+  // loadGame runs once, on first render, to build the starting state.
+  const [state, dispatch] = useReducer(gameReducer, undefined, loadGame);
+
+  // Save whenever the state changes.
+  useEffect(() => {
+    saveGame(state);
+  }, [state]);
 
   return (
     <>
